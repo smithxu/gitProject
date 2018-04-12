@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyRecycleView</string>
+    <string name="kongkongruye">这里空空如也</string>
+    <string name="dianjishauxin">点击图片刷新</string>
+    <string name="zhengzaijiazaigengduo">正在加载更多...</string>
+    <string name="meiyougengduoshuju">没有更多数据.</string>
+
+</resources>
