@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tab"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="baolilai.baolilai.MainActivity">
+    android:orientation="vertical">
+    <baolilai.baolilai.view.NoScrollViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </baolilai.baolilai.view.NoScrollViewPager>
+    <View android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/theme_border_bg"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-       />
-
+        android:orientation="horizontal"
+        android:background="@color/theme_white_bg">
+        <baolilai.baolilai.view.TabIndicatorView
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <baolilai.baolilai.view.TabIndicatorView
+            android:id="@+id/rb_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+        <baolilai.baolilai.view.TabIndicatorView
+            android:id="@+id/rb_me"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
 </LinearLayout>
